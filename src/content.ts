@@ -13,4 +13,4 @@ const files = [
 
 const monthOf=(name:string)=>{const n=name.toLowerCase();if(n.includes('set'))return'Setembro';if(n.includes('ago'))return'Agosto';if(n.includes('jul'))return'Julho';return'Junho'}
 const clientOf=(name:string)=>name.toLowerCase().includes('bar-do-beco')?'Bar do Beco':name.toLowerCase().includes('gold')?'Gold Smoke':name.toLowerCase().includes('point')?'Point do Gordão':'Bar Premium'
-export const works=files.map((file,index)=>({id:index+1,file,src:`/portfolio/${file}`,month:monthOf(file),client:clientOf(file),title:`${clientOf(file)} — ${monthOf(file)}`}))
+export const works=files.map((file,index)=>({id:index+1,file,src:`/portfolio/${file}`,month:monthOf(file),client:clientOf(file),title:file==='bar-do-beco-11-set.png'?'Kelvinho — Aniversário do Bar do Beco':`${clientOf(file)} — ${monthOf(file)}`}))
