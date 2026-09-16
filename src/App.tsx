@@ -115,7 +115,7 @@ function App(){
       <section id="contato" className="contact section-pad" data-reveal>
         <span className="index">04</span><p className="kicker">Seu próximo projeto</p><h2>VAMOS FAZER<br/><em>BARULHO?</em></h2><p>Flyer, site ou landing page: conte sua ideia. Eu cuido do impacto visual.</p>
         <div className="contact-actions">
-          {site.whatsapp?<a className="primary-btn" href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle/> Chamar no WhatsApp <ArrowUpRight/></a>:<button className="primary-btn" onClick={copyBrief}>{copied?<Check/>:<Copy/>}{copied?'Mensagem copiada':'Copiar mensagem de orçamento'}</button>}
+          {site.whatsapp?<a className="fire-cta" href={whatsappUrl} target="_blank" rel="noreferrer"><span className="fire-cta-spark" aria-hidden="true"/><span className="fire-cta-icon"><MessageCircle/></span><span>Chamar no WhatsApp</span><ArrowRight className="fire-cta-arrow"/></a>:<button className="primary-btn" onClick={copyBrief}>{copied?<Check/>:<Copy/>}{copied?'Mensagem copiada':'Copiar mensagem de orçamento'}</button>}
           {site.instagram&&<a className="social-btn" href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram/></a>}
         </div>
       </section>
