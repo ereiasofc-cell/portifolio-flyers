@@ -96,7 +96,7 @@ function App(){
 
       <section id="sobre" className="about section-pad">
         <div className="portrait-wrap" data-reveal><img src="/brand/portrait.png" alt="Retrato do designer da WS Design" loading="lazy"/><span>WS / Criador visual</span></div>
-        <div className="about-copy" data-reveal><span className="index">02</span><p className="kicker">Por trás dos pixels</p><h2>Design com<br/><em>presença.</em></h2><p className="lead">Transformo a energia de cada evento em uma peça visual impossível de ignorar.</p><p>Sou Wellington Santos, designer e desenvolvedor. Além dos flyers, crio sites e landing pages com identidade, estratégia e interações cuidadosas — do visual ao último detalhe da navegação.</p><div className="stats"><div><strong>50+</strong><span>peças na seleção</span></div><div><strong>02</strong><span>frentes criativas</span></div><div><strong>01</strong><span>visual memorável</span></div></div></div>
+        <div className="about-copy" data-reveal><span className="index">02</span><p className="kicker">Por trás dos pixels</p><h2>Design com<br/><em>presença.</em></h2><p className="lead">Transformo a energia de cada evento em uma peça visual impossível de ignorar.</p><p>Sou Wellington Santos, designer e desenvolvedor. Além dos flyers, crio sites e landing pages com identidade, estratégia e interações cuidadosas — do visual ao último detalhe da navegação.</p><div className="stats"><div><strong>{works.length}</strong><span>peças na seleção</span></div><div><strong>02</strong><span>frentes criativas</span></div><div><strong>01</strong><span>visual memorável</span></div></div></div>
       </section>
 
       <section id="sites" className="digital section-pad">
